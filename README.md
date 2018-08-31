@@ -1,6 +1,6 @@
 # ComingSoon
 
-Custom theme for Orchard Core CMS based on the [Coming Soon Start Bootstrap](https://startbootstrap.com/template-overviews/coming-soon/) HTML template. The theme includes a custom Setup Recipe that creates a working under construction to announce your project.
+Custom theme for Orchard Core CMS based on the [Coming Soon Start Bootstrap](https://startbootstrap.com/template-overviews/coming-soon/) HTML template. The theme includes a custom Setup Recipe that creates a working under construction landing page to announce your project.
 
 ## Status
 [![Build status](https://ci.appveyor.com/api/projects/status/xajhiraegjsnbiex?svg=true)](https://ci.appveyor.com/project/davidhayden/comingsoon) [![Status](https://img.shields.io/myget/davidhayden-ci/v/ComingSoon.OrchardCore.svg)](https://www.myget.org/feed/davidhayden-ci/package/nuget/ComingSoon.OrchardCore)
