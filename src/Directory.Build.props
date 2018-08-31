@@ -1,0 +1,15 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <PackageId>ComingSoon.OrchardCore</PackageId>
+        <Title>Coming Soon Theme for Orchard Core</Title>
+        <Description>Bootstrap 4 theme with an under construction landing page based on Start Bootstrap template.</Description>
+        <PackageTags>ComingSoon;Underconstruction;OrchardCore</PackageTags>
+        <VersionPrefix>1.0.0</VersionPrefix>
+        <VersionSuffix>beta2</VersionSuffix>
+    </PropertyGroup>
+
+    <!-- Called after so that the <VersionSuffix> is built after the local ones -->
+    <Import Project="Common.props"/>
+
+</Project>

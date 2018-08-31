@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ Site.Culture }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% page_title Site.SiteName, position: "after", separator: " - " %}</title>
+    {% style src:"/ComingSoon.OrchardCore/vendor/bootstrap/css/bootstrap.min.css" %}
+    {% style src:"//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" %}
+    {% style src:"//fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" %}
+    {% style src:"/ComingSoon.OrchardCore/vendor/font-awesome/css/font-awesome.min.css" %}
+    {% style src:"/ComingSoon.OrchardCore/css/coming-soon.min.css" %}
+    {% script src:"/ComingSoon.OrchardCore/vendor/jquery/jquery.min.js", at:"Foot" %}
+    {% script src:"/ComingSoon.OrchardCore/vendor/bootstrap/js/bootstrap.bundle.min.js", at:"Foot" %}
+    {% script src:"/ComingSoon.OrchardCore/js/coming-soon.min.js", at:"Foot" %}
+    {% resources type: "Meta" %}
+    {% resources type: "HeadLink" %}
+    {% resources type: "Stylesheet" %}
+    {% resources type: "HeadScript" %}
+</head>
+<body>
+<div class="overlay"></div>
+<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="/ComingSoon.OrchardCore/mp4/bg.mp4" type="video/mp4">
+</video>
+<div class="masthead">
+    <div class="masthead-bg"></div>
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-12 my-auto">
+                <div class="masthead-content text-white py-5 py-md-0">
+                    {% render_section "Content", required: false %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% render_section "Social", required: false %}
+{% resources type: "FootScript" %}
+</body>
+</html>
