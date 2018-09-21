@@ -504,7 +504,7 @@
           "PublishedUtc": "[js: variables('now')]",
           "CreatedUtc": "[js: variables('now')]",
           "Owner": null,
-          "Author": "admin",
+          "Author": "[js: parameters('AdminUsername')]",
           "AutoroutePart": {
             "Path": "home-page",
             "SetHomepage": true
