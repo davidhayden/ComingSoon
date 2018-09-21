@@ -8,6 +8,9 @@
   "issetuprecipe": true,
   "categories": [ "default" ],
   "tags": [ "comingsoon" ],
+  "variables": {
+    "now": "[js: new Date().toISOString()]"
+  },
   "steps": [
     {
       "name": "feature",
@@ -497,9 +500,9 @@
           "ContentType": "Page",
           "Latest": true,
           "Published": true,
-          "ModifiedUtc": "2017-08-16T23:21:36.8836967Z",
-          "PublishedUtc": "2017-08-16T23:21:37.1612415Z",
-          "CreatedUtc": "2017-08-16T00:49:29.6251921Z",
+          "ModifiedUtc": "[js: variables('now')]",
+          "PublishedUtc": "[js: variables('now')]",
+          "CreatedUtc": "[js: variables('now')]",
           "Owner": null,
           "Author": "admin",
           "AutoroutePart": {
