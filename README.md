@@ -9,7 +9,7 @@ Custom theme for Orchard Core CMS based on the [Coming Soon Start Bootstrap](htt
 
 Add the NuGet package, **ComingSoon.OrchardCore**, to the Orchard Core CMS Website. Launch the application and choose the *Coming Soon* Recipe from the Setup Page.
 
-![Coming Soon Recipe for Orchard Core CMS](https://github.com/davidhayden/ComingSoon.OrchardCore/blob/master/assets/coming-soon-recipe.png?raw=true)
+![Coming Soon Recipe for Orchard Core CMS](https://github.com/davidhayden/ComingSoon/blob/master/assets/coming-soon-recipe.png?raw=true)
 
 Complete the information and choose *Finish Setup* to create the website. The landing page should appear. Sign in as an administrator and modify as necessary.
 
@@ -17,7 +17,7 @@ Complete the information and choose *Finish Setup* to create the website. The la
 
 When you review the active themes for the website you will see Coming Soon as the default theme.
 
-![Coming Soon Theme for Orchard Core CMS](https://github.com/davidhayden/ComingSoon.OrchardCore/blob/master/assets/orchard-core-cms-theme-coming-soon.png?raw=true)
+![Coming Soon Theme for Orchard Core CMS](https://github.com/davidhayden/ComingSoon/blob/master/assets/orchard-core-cms-theme-coming-soon.png?raw=true)
 
 ## Road map
 
