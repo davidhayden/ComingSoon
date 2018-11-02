@@ -221,6 +221,7 @@
           "ContentItemId": "[js:uuid()]",
           "ContentItemVersionId": "[js:uuid()]",
           "ContentType": "Page",
+          "DisplayText": "Coming Soon",
           "Latest": true,
           "Published": true,
           "ModifiedUtc": "[js: variables('now')]",
@@ -239,6 +240,7 @@
         {
           "ContentItemId": "[js: uuid()]",
           "ContentType": "HtmlWidget",
+          "DisplayText": "Content",
           "Latest": true,
           "Published": true,
           "Owner": "[js: parameters('AdminUsername')]",
@@ -259,6 +261,7 @@
         {
           "ContentItemId": "[js: uuid()]",
           "ContentType": "HtmlWidget",
+          "DisplayText": "Social",
           "Latest": true,
           "Published": true,
           "Owner": "[js: parameters('AdminUsername')]",
