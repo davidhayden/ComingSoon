@@ -4,10 +4,14 @@
   "description": "Landing page announcing your upcoming project.",
   "author": "David Hayden",
   "website": "https://www.davidhayden.me",
-  "version": "2.0",
+  "version": "1.0.0-rc2",
   "issetuprecipe": true,
-  "categories": [ "default" ],
-  "tags": [ "comingsoon" ],
+  "categories": [
+    "default"
+  ],
+  "tags": [
+    "comingsoon"
+  ],
   "variables": {
     "now": "[js: new Date().toISOString()]"
   },
@@ -34,6 +38,7 @@
         "OrchardCore.ContentFields",
         "OrchardCore.ContentPreview",
         "OrchardCore.Contents",
+        "OrchardCore.Contents.FileContentDefinition",
         "OrchardCore.ContentTypes",
         "OrchardCore.CustomSettings",
         "OrchardCore.Deployment",
@@ -69,7 +74,10 @@
         "ContentItemId": "[js:uuid()]"
       },
       "LayerSettings": {
-        "Zones": [ "Content", "Social" ]
+        "Zones": [
+          "Content",
+          "Social"
+        ]
       }
     },
     {
@@ -79,19 +87,23 @@
           "Name": "HtmlWidget",
           "DisplayName": "Html",
           "Settings": {
-            "Creatable": "False",
-            "Draftable": "True",
-            "Versionable": "True",
-            "Listable": "False",
-            "Securable": "True",
-            "Stereotype": "Widget"
+            "ContentTypeSettings": {
+              "Creatable": "False",
+              "Draftable": "True",
+              "Versionable": "True",
+              "Listable": "False",
+              "Securable": "True",
+              "Stereotype": "Widget"
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
               "PartName": "HtmlWidget",
               "Name": "HtmlWidget",
               "Settings": {
-                "Position": "0"
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
               }
             }
           ]
@@ -100,44 +112,52 @@
           "Name": "Page",
           "DisplayName": "Page",
           "Settings": {
-            "Creatable": "True",
-            "Draftable": "True",
-            "Versionable": "True",
-            "Listable": "True",
-            "Securable": "True",
-            "Stereotype": null
+            "ContentTypeSettings": {
+              "Creatable": "True",
+              "Draftable": "True",
+              "Versionable": "True",
+              "Listable": "True",
+              "Securable": "True"
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
               "PartName": "Page",
               "Name": "Page",
               "Settings": {
-                "Position": "2"
+                "ContentTypePartSettings": {
+                  "Position": "2"
+                }
               }
             },
             {
               "PartName": "AutoroutePart",
               "Name": "AutoroutePart",
               "Settings": {
-                "Position": "1",
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                },
                 "ContentIndexSettings": {
                   "Included": false,
                   "Stored": false,
                   "Analyzed": false,
                   "Sanitized": false,
-                  "Tokenized": false,
-                  "Template": null
+                  "Tokenized": false
                 },
-                "Pattern": "{{ ContentItem | display_text | slugify }}",
-                "AllowCustomPath": "True",
-                "ShowHomepageOption": "True"
+                "AutoroutePartSettings": {
+                  "Pattern": "{{ ContentItem | display_text | slugify }}",
+                  "AllowCustomPath": "True",
+                  "ShowHomepageOption": "True"
+                }
               }
             },
             {
               "PartName": "TitlePart",
               "Name": "TitlePart",
               "Settings": {
-                "Position": "0"
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
               }
             }
           ]
@@ -146,19 +166,23 @@
           "Name": "LiquidWidget",
           "DisplayName": "Liquid",
           "Settings": {
-            "Creatable": "False",
-            "Draftable": "True",
-            "Versionable": "True",
-            "Listable": "True",
-            "Securable": "True",
-            "Stereotype": "Widget"
+            "ContentTypeSettings": {
+              "Creatable": "False",
+              "Draftable": "True",
+              "Versionable": "True",
+              "Listable": "True",
+              "Securable": "True",
+              "Stereotype": "Widget"
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
               "PartName": "LiquidPart",
               "Name": "LiquidPart",
               "Settings": {
-                "Position": "0"
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
               }
             }
           ]
@@ -173,17 +197,18 @@
               "FieldName": "HtmlField",
               "Name": "Content",
               "Settings": {
-                "DisplayName": "Content",
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Content",
+                  "Editor": "Multiline",
+                  "Position": "0"
+                },
                 "ContentIndexSettings": {
                   "Included": false,
                   "Stored": false,
                   "Analyzed": false,
                   "Sanitized": false,
                   "Tokenized": false
-                },
-                "Hint": null,
-                "Editor": "Multiline",
-                "Position": "0"
+                }
               }
             }
           ]
@@ -196,18 +221,17 @@
               "FieldName": "TextField",
               "Name": "Link",
               "Settings": {
-                "DisplayName": "Link",
-                "Hint": null,
-                "Editor": null,
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Link",
+                  "Position": "0"
+                },
                 "ContentIndexSettings": {
                   "Included": false,
                   "Stored": false,
                   "Analyzed": false,
                   "Sanitized": false,
-                  "Tokenized": false,
-                  "Template": null
-                },
-                "Position": "0"
+                  "Tokenized": false
+                }
               }
             }
           ]
@@ -227,7 +251,7 @@
           "ModifiedUtc": "[js: variables('now')]",
           "PublishedUtc": "[js: variables('now')]",
           "CreatedUtc": "[js: variables('now')]",
-          "Owner": null,
+          "Owner": "[js: parameters('AdminUsername')]",
           "Author": "[js: parameters('AdminUsername')]",
           "AutoroutePart": {
             "Path": "home-page",
