@@ -8,6 +8,13 @@ Custom theme for Orchard Core CMS based on the [Coming Soon Start Bootstrap](htt
 
 [![Build status](https://ci.appveyor.com/api/projects/status/xajhiraegjsnbiex?svg=true)](https://ci.appveyor.com/project/davidhayden/comingsoon) [![Status](https://img.shields.io/myget/davidhayden-ci/v/ComingSoon.OrchardCore.svg)](https://www.myget.org/feed/davidhayden-ci/package/nuget/ComingSoon.OrchardCore)
 
+## Change Log
+
+- 2020-07-29 Update to Coming Soon v5.0.8 on Start Bootstrap
+- 2020-06-24 Update to Orchard Core CMS 1.0.0-rc2
+- 2019-08-10 Update to Orchard Core CMS 1.0.0-beta3
+- 2018-08-31 Initial Release
+
 ## Getting Started
 
 Add the NuGet package, **ComingSoon.OrchardCore**, to the Orchard Core CMS Website. Launch the application and choose the _Coming Soon_ Recipe from the Setup Page.
